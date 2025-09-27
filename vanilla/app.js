@@ -95,7 +95,7 @@ function renderList() {
   students.forEach((s, i) => {
     const clone = template.content.cloneNode(true);
     clone.querySelector(".student-name").textContent = s.name;
-    clone.querySelector(".student-avg").textContent = s.avg; // :marca_de_verificación_blanca: ya es string
+    clone.querySelector(".student-avg").textContent = s.avg;
     clone
       .querySelector(".delete-btn")
       .addEventListener("click", () => deleteStudent(i));
